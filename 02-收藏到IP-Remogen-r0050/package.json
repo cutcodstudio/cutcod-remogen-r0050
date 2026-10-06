@@ -1,0 +1,33 @@
+{
+  "name": "remogen",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "remotion studio",
+    "build": "remotion render CandlestickSurge out/candlestick.mp4",
+    "render": "remotion render",
+    "scene-splitter": "tsx scripts/scene-splitter.ts",
+    "split-video": "tsx scripts/split-video.ts",
+    "feedback": "tsx scripts/feedback-loop.ts",
+    "render:r0050": "node scripts/render-portable.mjs"
+  },
+  "keywords": [],
+  "author": "leewardbound",
+  "license": "MIT",
+  "description": "AI-powered video recreation starter kit using Remotion + Gemini",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@remotion/bundler": "^4.0.394",
+    "@remotion/cli": "^4.0.394",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "remotion": "^4.0.394",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "tsx": "^4.21.0"
+  }
+}
